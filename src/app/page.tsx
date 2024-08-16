@@ -3,7 +3,7 @@ import { db } from "@/lib/db";
 
 export default async function Home() {
 
-  await db.set('hello', 'hello')
+  
 
   return (
     <div>
@@ -12,3 +12,4 @@ export default async function Home() {
     </div>
   );
 }
+ 
