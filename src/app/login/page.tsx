@@ -1,12 +1,25 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 "use client"
 import Button from '@/components/ui/Button';
+import { signIn } from 'next-auth/react';
 import React, { FC, useState } from 'react';
+import toast from 'react-hot-toast';
 
 const page: FC = () => {
 
     async function loginWithGoogle() {
-
+        try {
+            setIsLoading(true)
+            await signIn('google');
+        }
+        catch (error) {
+            // display error message 
+            toast.error("Something went wrong!")
+            console.log(error);
+        }
+        finally {
+            setIsLoading(false);
+        }
 
     }
 
