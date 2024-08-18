@@ -3,7 +3,8 @@ import React from 'react';
 const page = () => {
     return (
         <main className='pt-8'>
-            <h1>Add a friend</h1>
+            {/* friend request section */}
+            <h1>Add a friend</h1> 
         </main>
     );
 };
