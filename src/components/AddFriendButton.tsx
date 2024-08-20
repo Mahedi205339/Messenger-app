@@ -75,6 +75,6 @@ const AddFriendButton: FC<AddFriendButtonProps> = ({ }) => {
             ) : null}
         </form>
     )
-}
+}   
 
 export default AddFriendButton
