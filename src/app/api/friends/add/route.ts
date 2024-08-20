@@ -24,9 +24,19 @@ export async function POST(req: Request) {
 
         const session = await getServerSession(authOptions)
 
+        if (!idToAdd) {
+            return new Response('This person does not exits!', { status: 400 })
+        }
+
         if (!session) {
             return new Response('Unauthorized ', { status: 401 })
         }
+
+        if (idToAdd === session.user.id) {
+            return new Response('You cannot add yourself as a friend!', { status: 400 })
+        }
+
+        
     }
     catch (error) {
 
