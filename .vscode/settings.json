@@ -3,6 +3,8 @@
         "clsx",
         "hookform",
         "lucide",
+        "sadd",
+        "sismember",
         "tailwindcss",
         "UPSTASH"
     ]
