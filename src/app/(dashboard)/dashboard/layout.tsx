@@ -1,9 +1,18 @@
-import React from 'react';
+import { authOptions } from '@/lib/auth';
+import { getServerSession } from 'next-auth';
+import React, { ReactNode } from 'react';
 
-const layout = () => {
+interface LayoutProps {
+    children: ReactNode
+}
+
+const layout = async ({ children }: LayoutProps) => {
+
+    const session = await getServerSession(authOptions)
+
     return (
         <div>
-            
+            {children}
         </div>
     );
 };
