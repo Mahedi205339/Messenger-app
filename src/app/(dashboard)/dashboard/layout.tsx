@@ -6,6 +6,8 @@ interface LayoutProps {
     children: ReactNode
 }
 
+//layout
+
 const layout = async ({ children }: LayoutProps) => {
 
     const session = await getServerSession(authOptions)
