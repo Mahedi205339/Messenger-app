@@ -6,7 +6,7 @@ interface LayoutProps {
     children: ReactNode
 }
 
-//layout
+//not main layout
 
 const layout = async ({ children }: LayoutProps) => {
 
