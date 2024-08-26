@@ -2,11 +2,17 @@
 const nextConfig = {
     experimental:{
         appDir :true,
-
     },
     images:{
-        domains:''
+        remotePatterns:[
+            {
+                protocol:'https',
+                hostname:'lh3.googleusercontent.com',
+                port:''
+            }
+        ]
     }
+    
 };
 
 export default nextConfig;
