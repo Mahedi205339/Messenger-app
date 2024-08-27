@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import { Icons, Icon } from '@/components/icons';
+import SignOutButton from '@/components/SignOutButton';
 import { authOptions } from '@/lib/auth';
 import { getServerSession } from 'next-auth';
 import Image from 'next/image';
@@ -85,7 +86,7 @@ const layout = async ({ children }: LayoutProps) => {
                                     </span>
                                 </div>
                             </div>
-
+                            <SignOutButton />
                         </li>
                     </ul>
 
