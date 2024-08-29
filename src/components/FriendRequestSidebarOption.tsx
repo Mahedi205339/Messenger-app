@@ -1,8 +1,19 @@
+"use client"
 import { User } from 'lucide-react';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 
-const FriendRequestSidebarOption = () => {
+interface FriendRequestSidebarOptionProps {
+    sessionId: string
+    initialUnseenRequestCount: number
+}
+
+const FriendRequestSidebarOption = ({sessionId, initialUnseenRequestCount }) => {
+
+    cons[unseenRequestCount, setUnseenRequestCount] = useState<number>(
+
+    )
+
     return (
         <Link
             href='/dashboard/requests'

@@ -70,7 +70,7 @@ const layout = async ({ children }: LayoutProps) => {
                         </li>
 
                         <li>
-                            <FriendRequestSidebarOption />
+                            <FriendRequestSidebarOption sessionId={session.user.id} initialUnseenRequestCount={45} />
                         </li>
 
                         <li className='-mx-6 mt-auto flex items-center'>
