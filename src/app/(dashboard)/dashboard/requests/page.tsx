@@ -1,3 +1,4 @@
+import FriendRequests from '@/components/FriendRequests';
 import { fetchRedis } from '@/helpers/redis';
 import { authOptions } from '@/lib/auth';
 import { getServerSession } from 'next-auth';
@@ -31,7 +32,7 @@ const page = async () => {
                 Add a Friend
             </h1>
             <div className='flex flex-col gap-4'>
-                <FriendRequest />
+                <FriendRequests sessionId={session.user.id} incomingFriendRequests={incomingFriendRequest} />
             </div>
         </main>
     );
