@@ -13,6 +13,8 @@ const FriendRequestSidebarOption = ({ sessionId, initialUnseenRequestCount }: Fr
     const [unseenRequestCount, setUnseenRequestCount] = useState<number>(initialUnseenRequestCount)
 
 
+     //friend req
+
 
     return (
         <Link
